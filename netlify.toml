@@ -4,3 +4,9 @@
 
 [template]
   incoming-hooks = ["Ghost"]
+
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+  [plugins.inputs]
+  cloudName = "dlq71ih0t"
