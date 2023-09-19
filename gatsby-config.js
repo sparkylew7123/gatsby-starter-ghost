@@ -39,7 +39,7 @@ if (
         `siteUrl can't be localhost and needs to be configured in siteConfig. Check the README.`
     ); // eslint-disable-line
 }
-plugins: [`gatsby-plugin-netlify`]
+
 
 /**
  * This is the place where you can tell Gatsby which plugins to use
@@ -201,5 +201,6 @@ module.exports = {
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-offline`,
+        `gatsby-plugin-netlify`,
     ],
 };
