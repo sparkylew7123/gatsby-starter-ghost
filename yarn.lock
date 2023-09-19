@@ -6403,7 +6403,7 @@ gatsby-source-filesystem@4.15.0:
     valid-url "^1.0.9"
     xstate "^4.26.1"
 
-gatsby-source-ghost@5.0.2:
+gatsby-source-ghost@^5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-source-ghost/-/gatsby-source-ghost-5.0.2.tgz#05b08af0e27514f19439c2dede6f53b5ab8cea92"
   integrity sha512-xizrhlE4vDS0Z2qzSv0NUFOwUo/YmdDJX8iiRzLyatxFowmX2NCBan64Nsa1eR2QoZU0xnuL57paO0p4SlE6Zg==
