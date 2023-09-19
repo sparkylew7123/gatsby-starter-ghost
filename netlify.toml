@@ -7,8 +7,11 @@
 
 [[plugins]]
 package = "netlify-plugin-ghost-markdown"    
-package = "netlify-plugin-cloudinary"
-   [plugins.inputs]
+ [plugins.inputs]
    ghostURL = "http://source.letsreview.co.uk"
    ghostKey = "69408f84d4766a4b59338099d8"
-   cloudName = "dlq71ih0t"
+
+[[plugins]]
+package = "netlify-plugin-cloudinary"
+[plugins.inputs]
+cloudName = "dlq71ih0t"
