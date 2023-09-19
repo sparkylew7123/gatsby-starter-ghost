@@ -5,7 +5,7 @@
 [template]
   incoming-hooks = ["Ghost"]
 
-[[plugins]]
+[plugins]
   package = "netlify-plugin-cloudinary"
 
   [plugins.inputs]
