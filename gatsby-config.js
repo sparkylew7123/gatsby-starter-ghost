@@ -62,7 +62,7 @@
             /**
              *  Content Plugins
              */
-                    /**
+                
 
                 {
                     resolve: `gatsby-source-filesystem`,
@@ -71,10 +71,10 @@
                         name: `pages`,
                     },
                 },
-                */
+               
             // Setup for optimised images.
             // See https://www.gatsbyjs.org/packages/gatsby-image/
-            /**
+            
             {
                 resolve: `gatsby-source-filesystem`,
                 options: {
@@ -82,7 +82,7 @@
                     name: `images`,
                 },
             },
-            */
+            
             `gatsby-plugin-image`,
             `gatsby-plugin-sharp`,
             `gatsby-transformer-sharp`,
