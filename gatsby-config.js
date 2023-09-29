@@ -126,13 +126,15 @@
                 resolveEnv: () => NETLIFY_ENV,
                 env: {
                     production: {
-                    policy: [{userAgent: '*'}]
+                        policy: [{userAgent: '*', allow: '/'}],
+                        sitemap: 'https://letsreview.co.uk/sitemap.xml',
+                        host: 'https://letsreview.co.uk'
                     },
                     'branch-deploy': {
-                    policy: [{userAgent: '*', allow: '/'}],
-                    sitemap: 'https://letsreview.co.uk/sitemap.xml',
-                    host: 'https://letsreview.co.uk'
-                    },
+                        policy: [{userAgent: '*', disallow: ['/']}],
+                        sitemap: null,
+                        host: null
+                     },
                     'deploy-preview': {
                     policy: [{userAgent: '*', disallow: ['/']}],
                     sitemap: null,
