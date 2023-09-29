@@ -82,7 +82,12 @@
                     name: `images`,
                 },
             },
-            
+            {
+                resolve: `gatsby-plugin-google-adsense`,
+                options: {
+                  publisherId: `ca-pub-1904394451326149`
+                },
+              },
             `gatsby-plugin-image`,
             `gatsby-plugin-sharp`,
             `gatsby-transformer-sharp`,
