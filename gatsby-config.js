@@ -127,14 +127,14 @@ module. s = {
                   policy: [{userAgent: '*'}]
                 },
                 'branch-deploy': {
-                    policy: [{userAgent: '*', allow: ['/']}],
-                    sitemap: 'https://www.letsreview.co.uk/sitemap.xml',
-                    host: 'https://www.letsreview.co.uk'
+                  policy: [{userAgent: '*', allow: '/'}],
+                  sitemap: 'https://letsreview.co.uk/sitemap.xml',
+                  host: 'https://letsreview.co.uk'
                 },
                 'deploy-preview': {
-                  policy: [{userAgent: '*', allow: ['/']}],
-                  sitemap: 'https://www.letsreview.co.uk/sitemap.xml',
-                  host: 'https://www.letsreview.co.uk'
+                  policy: [{userAgent: '*', allow: '/'}],
+                  sitemap: 'https://letsreview.co.uk/sitemap.xml',
+                  host: 'https://letsreview.co.uk'
                 }
               }
             }
