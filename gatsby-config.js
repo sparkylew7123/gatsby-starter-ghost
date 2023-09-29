@@ -65,6 +65,8 @@ module. s = {
         /**
          *  Content Plugins
          */
+                /**
+
             {
                 resolve: `gatsby-source-filesystem`,
                 options: {
@@ -72,8 +74,10 @@ module. s = {
                     name: `pages`,
                 },
             },
+             */
         // Setup for optimised images.
         // See https://www.gatsbyjs.org/packages/gatsby-image/
+        /**
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -81,6 +85,7 @@ module. s = {
                 name: `images`,
             },
         },
+        */
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
@@ -132,9 +137,9 @@ module. s = {
                   host: 'https://letsreview.co.uk'
                 },
                 'deploy-preview': {
-                  policy: [{userAgent: '*', allow: '/'}],
-                  sitemap: 'https://letsreview.co.uk/sitemap.xml',
-                  host: 'https://letsreview.co.uk'
+                  policy: [{userAgent: '*', disallow: ['/']}],
+                  sitemap: null,
+                  host: null
                 }
               }
             }
