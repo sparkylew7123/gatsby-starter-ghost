@@ -56,7 +56,7 @@ const {
  *
  */
 
-module.exports = {
+module. s = {
     siteMetadata: {
         siteUrl: process.env.SITEURL || config.siteUrl,
     },
@@ -65,13 +65,13 @@ module.exports = {
         /**
          *  Content Plugins
          */
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: path.join(__dirname, `src`, `pages`),
-                name: `pages`,
+            {
+                resolve: `gatsby-source-filesystem`,
+                options: {
+                    path: path.join(__dirname, `src`, `pages`),
+                    name: `pages`,
+                },
             },
-        },
         // Setup for optimised images.
         // See https://www.gatsbyjs.org/packages/gatsby-image/
         {
@@ -127,14 +127,14 @@ module.exports = {
                   policy: [{userAgent: '*'}]
                 },
                 'branch-deploy': {
-                  policy: [{userAgent: '*', disallow: ['/']}],
-                  sitemap: null,
-                  host: null
+                    policy: [{userAgent: '*', allow: ['/']}],
+                    sitemap: 'https://www.letsreview.co.uk/sitemap.xml',
+                    host: 'https://www.letsreview.co.uk'
                 },
                 'deploy-preview': {
-                  policy: [{userAgent: '*', disallow: ['/']}],
-                  sitemap: null,
-                  host: null
+                  policy: [{userAgent: '*', allow: ['/']}],
+                  sitemap: 'https://www.letsreview.co.uk/sitemap.xml',
+                  host: 'https://www.letsreview.co.uk'
                 }
               }
             }
