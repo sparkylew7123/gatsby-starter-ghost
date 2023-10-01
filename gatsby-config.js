@@ -103,6 +103,10 @@
                     process.env.NODE_ENV === `development`
                         ? ghostConfig.development
                         : ghostConfig.production,
+                        apiUrl: `https://source.letsreview.co.uk`,
+                        contentApiKey: `e140cbcfdb6c1eaf4aa467129d`,
+                        version: `v5.0` // Ghost API version, optional, defaults to "v5.0".
+                     // Pass in "v4.0" if your Ghost install is not on 5.0 yet!
             },
             /**
              *  Utility Plugins
