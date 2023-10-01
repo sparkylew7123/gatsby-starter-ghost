@@ -94,7 +94,8 @@
                   publisherId: `ca-pub-1904394451326149`
                 },
               },
-           `gatsby-plugin-image`,
+            `gatsby-plugin-graphql-codegen`,
+            `gatsby-plugin-image`,
             `gatsby-plugin-sharp`,
             `gatsby-transformer-sharp`,
             {
