@@ -244,7 +244,7 @@
                         `/offline-plugin-app-shell-fallback`,
                     ],
                     createLinkInHead: true,
-                    addUncaughtPages: true,
+                    addUncaughtPages: false,
                 },
             },
             `gatsby-plugin-catch-links`,
