@@ -176,71 +176,10 @@ module.exports = {
                 feeds: [generateRSSFeed(config)],
             },
         },
-        {
-            resolve: `gatsby-plugin-advanced-sitemap`,
-            options: {
-                query: `{
-    allGhostPost(sort: {published_at: ASC}) {
-      edges {
-        node {
-          slug
-        }
-      }
-    }
-    allGhostTag(sort: {name: ASC}) {
-      edges {
-        node {
-          slug
-          url
-          postCount
-        }
-      }
-    }
-    allGhostAuthor(sort: {name: ASC}) {
-      edges {
-        node {
-          slug
-          url
-          postCount
-        }
-      }
-    }
-    allGhostPage(sort: {published_at: ASC}) {
-      edges {
-        node {
-          slug
-          url
-        }
-      }
-    }
-  }`,
-                mapping: {
-                    allGhostPost: {
-                        sitemap: `posts`,
-                    },
-                    allGhostTag: {
-                        sitemap: `tags`,
-                    },
-                    allGhostAuthor: {
-                        sitemap: `authors`,
-                    },
-                    allGhostPage: {
-                        sitemap: `pages`,
-                    },
-                },
-                exclude: [
-                    `/dev-404-page`,
-                    `/404`,
-                    `/404.html`,
-                    `/offline-plugin-app-shell-fallback`,
-                ],
-                createLinkInHead: true,
-                addUncaughtPages: false,
-            },
-        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-offline`,
         `gatsby-plugin-netlify`,
     ],
 };
+
