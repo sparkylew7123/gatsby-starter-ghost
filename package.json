@@ -32,15 +32,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.62.0",
+    "@typescript-eslint/parser": "^6.7.4",
     "babel-eslint": "10.1.0",
     "eslint": "8.49.0",
     "eslint-plugin-ghost": "3.3.2",
     "eslint-plugin-react": "7.33.2",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.31",
-    "typescript": "^5.2.2"
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.31"
   },
   "dependencies": {
+    "@graphql-tools/url-loader": "^8.0.0",
     "@tryghost/helpers": "1.1.85",
     "@tryghost/helpers-gatsby": "2.0.16",
     "cheerio": "1.0.0-rc.11",
@@ -56,7 +56,6 @@
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-netlify": "^5.1.1",
-    "gatsby-plugin-offline": "5.15.1",
     "gatsby-plugin-react-helmet": "^6.12.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sharp": "^4.25.1",
@@ -64,11 +63,13 @@
     "gatsby-source-ghost": "^5.0.2",
     "gatsby-transformer-sharp": "^5.12.0",
     "generate-robotstxt": "^8.0.3",
+    "joi": "^17.11.0",
     "lodash": "4.17.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-helmet": "6.1.0",
     "sharp": "^0.32.6",
+    "typescript": "^5.2.2",
     "url": "0.11.0"
   }
 }
