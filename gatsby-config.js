@@ -84,8 +84,11 @@ module.exports = {
         {
             resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
             options: {
-                devMode: true,
-            },
+                analyzerMode: "static",
+                analyzerPort: "8888",
+                analyzerHost: "https://letsreview.co.uk",
+                defaultSizes: "gzip"
+              },
         },
         {
             resolve: `gatsby-plugin-google-adsense`,
