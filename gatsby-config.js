@@ -86,7 +86,7 @@ module.exports = {
             options: {
                 analyzerMode: "static",
                 analyzerPort: "8888",
-                analyzerHost: "https://letsreview.co.uk",
+                analyzeUrl: "http://letsreview.co.uk:8888",
                 defaultSizes: "gzip"
               },
         },
