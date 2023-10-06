@@ -82,15 +82,6 @@ module.exports = {
             },
         },
         {
-            resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-            options: {
-                analyzerMode: "static",
-                analyzerPort: "8888",
-                analyzeUrl: "http://letsreview.co.uk:8888",
-                defaultSizes: "gzip"
-              },
-        },
-        {
             resolve: `gatsby-plugin-google-adsense`,
             options: {
                 publisherId: `ca-pub-1904394451326149`,
